@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tài khoản AI Lâm Nguyễn</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container hero">
+      <div class="hero-left">
+        <div class="brand-card">
+          <img
+            class="site-logo"
+            src="images/logo.png"
+            alt="Logo Tài khoản AI Lâm Nguyễn"
+            onerror="this.style.display='none'; document.getElementById('logoFallback').style.display='grid';"
+          />
+          <div id="logoFallback" class="logo-fallback">LN</div>
+          <div>
+            <h1>Tài khoản AI Lâm Nguyễn</h1>
+            <p class="hero-subtitle">
+              Chuyên các gói tài khoản số, hỗ trợ nhanh qua Zalo.
+            </p>
+          </div>
+        </div>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#products-section">Xem sản phẩm</a>
+          <a class="btn btn-secondary" href="https://zalo.me/0795048965" target="_blank" rel="noopener noreferrer">
+            Liên hệ Zalo
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="toolbar">
+      <div class="search-box">
+        <input id="searchInput" type="text" placeholder="Tìm sản phẩm..." />
+      </div>
+
+      <div class="filter-box">
+        <select id="categoryFilter">
+          <option value="all">Tất cả danh mục</option>
+        </select>
+      </div>
+    </section>
+
+    <section class="category-chips" id="categoryChips"></section>
+
+    <section id="products-section" class="products-section">
+      <div class="section-head">
+        <h2>Sản phẩm nổi bật</h2>
+        <p id="resultCount">0 sản phẩm</p>
+      </div>
+
+      <div id="productGrid" class="product-grid"></div>
+
+      <div id="emptyState" class="empty-state hidden">
+        Không tìm thấy sản phẩm phù hợp.
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div>
+        <strong>Tài khoản AI Lâm Nguyễn</strong>
+        <p>Bán tài khoản số - hỗ trợ nhanh qua Zalo.</p>
+      </div>
+      <a class="btn btn-secondary" href="https://zalo.me/0368978965" target="_blank" rel="noopener noreferrer">
+        Liên hệ mua hàng
+      </a>
+    </div>
+  </footer>
+
+  <!-- <script src="products.js"></script> -->
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
